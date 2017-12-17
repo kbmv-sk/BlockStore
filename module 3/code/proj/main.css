@@ -1,0 +1,34 @@
+body {
+    background-color:#F8F8F8;
+    padding: 2em;
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    font-weight:bold;
+	font-size: 26px;
+	line-height:30px;
+	color:#AEAFE2;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+}
+label {
+    display:block;
+    margin-bottom:10px;
+}
+input {
+    padding:10px;
+    width: 50%;
+    margin-bottom: 1em;
+}
+button {
+    margin: 2em 0;
+    padding: 1em 4em;
+    display:block;
+}
+
+#instructor {
+    padding:1em;
+    background-color:#fff;
+    margin: 1em 0;
+}
