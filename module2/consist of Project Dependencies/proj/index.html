@@ -41,15 +41,23 @@
 	<label for="name" class="col-lg-2 control-label">Enter Refugee name:</label>
         <input id="ruff" type="text">
 
+        <br>
         <button id="button"> Send The Product</button>
+        <button id="button1"> Track The Product</button>
+        
+        <div>
 
-
+                <p id="ss">  </p> <p id="pk">  </p><p id="dd"></p> </p> <p id="rr"> </p> <p id="vv"> </p> <p id="zz"> </p>
+               
+       
+        </div>
+        
     </div>
 
     
 
     <script>
-       // Our future code here..
+       
 	 if (typeof web3 !== 'undefined') {
             web3 = new Web3(web3.currentProvider);
         } else {
@@ -298,6 +306,7 @@
         var button = document.getElementById('button');
         var output = document.getElementById('output');
         var instructor = document.getElementById('instructor');
+        var button1 = document.getElementById('button1');
 
         
         
@@ -314,9 +323,9 @@
         });   
         
 
+/*
 
-
-     /*Mylin.getList(function(error, result){
+     Mylin.getList(function(error, result){
             if(!error)
                 {
                     instructor.html(' ('+result[0]+' Package number)');
@@ -325,7 +334,7 @@
             else
                 console.error(error);
         });
-/*
+
         Mylin.getPack(function(error, result){
             if(!error)
                 {
@@ -393,13 +402,23 @@
     */
    // document.getElementById("p1").innerHTML = listt;
 
+  // <pre id="output" style="color:blue;"> 
+    //        food packet number 1 is went from red cross Hq to distibution center in chicago, then to relief center 5 and then Joe volunteer picked it up and handed to Refugee John
+    button1.addEventListener('click', function () {
+document.getElementById("ss").innerHTML = listt.value + " packet number "; 
+document.getElementById("pk").innerHTML = packk.value + " went from red cross Hq to distibution center in "; 
+document.getElementById("dd").innerHTML = dcc.value + " then to relief center "; 
+document.getElementById("rr").innerHTML = rcc.value + " and then ";   
+document.getElementById("vv").innerHTML = voll.value + " volunteer picked it up and handed to Refugee " ; 
+document.getElementById("zz").innerHTML = ruff.value; 
+            });
+    
     </script>
-        <h2 id="instructor"></h2>
+        
         <p id="p1"> </p>
         
         
-        <pre id="output" style="color:blue;"> 
-            food packet number 1 is went from red cross Hq to distibution center in chicago, then to relief center 5 and then Joe volunteer picked it up and handed to Refugee John
+        
 
         </pre>
 </body>
