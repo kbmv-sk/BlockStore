@@ -11,3 +11,6 @@ module -2 : 1) implimentation via remix browser
 module -3 :  1) developed web dapp (since android doesnt seem to link with ethereum)  ( Updated UI and changes folder not module3 folder)..
              2) in other implimentations generated apk a) Used C for Droid efectivelly all cases
                                                         b) using android studio (not much )
+
+
+Smart contract instead of proj.sol in module 2 the on on home updatedContract based on tracker is final custom contract 
